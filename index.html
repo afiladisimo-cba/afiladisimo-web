@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="AFILADÍSIMO: afilado profesional de cuchillos en Córdoba Capital. Retiro y entrega a domicilio sin cargo.">
+  <title>AFILADÍSIMO | Afilado profesional de cuchillos</title>
+  <style>
+    :root { --yellow:#ffd400; --black:#101010; --panel:#191919; --muted:#c7c7c7; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--black); color:#fff; line-height:1.55; }
+    a { color:inherit; }
+    .wrap { width:min(100% - 36px, 980px); margin:auto; }
+    header { border-bottom:1px solid #333; padding:20px 0; }
+    .brand { font-weight:900; letter-spacing:1.5px; font-size:clamp(1.6rem,5vw,2.3rem); }
+    .brand span { color:var(--yellow); }
+    .tag { margin-top:2px; font-size:.78rem; letter-spacing:2px; color:var(--muted); text-transform:uppercase; }
+    .hero { padding:66px 0 48px; }
+    .eyebrow { color:var(--yellow); font-size:.82rem; font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-size:clamp(2.3rem,8vw,4.6rem); line-height:1.02; margin:14px 0 18px; letter-spacing:-1.5px; }
+    h1 em { color:var(--yellow); font-style:normal; }
+    .intro { max-width:650px; font-size:clamp(1.05rem,3vw,1.25rem); color:#e5e5e5; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .btn { display:inline-flex; justify-content:center; align-items:center; text-decoration:none; font-weight:800; padding:15px 20px; border-radius:8px; min-height:52px; }
+    .primary { background:var(--yellow); color:#111; }
+    .secondary { border:1px solid #777; color:#fff; }
+    .section { padding:35px 0; }
+    h2 { font-size:clamp(1.5rem,5vw,2.2rem); margin:0 0 18px; }
+    .yellow-line { width:58px; height:4px; background:var(--yellow); margin:0 0 24px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .tile { background:var(--panel); border:1px solid #303030; border-radius:12px; padding:22px 16px; }
+    .tile strong { display:block; color:var(--yellow); font-size:1.08rem; letter-spacing:.6px; }
+    .tile p { color:var(--muted); margin:8px 0 0; font-size:.94rem; }
+    .price-card { background:#1a1a1a; border:1px solid #383838; border-radius:14px; padding:24px; max-width:650px; }
+    .price-row { display:flex; gap:16px; align-items:center; justify-content:space-between; padding:13px 0; border-bottom:1px solid #333; }
+    .price-row:last-child { border-bottom:0; }
+    .price { color:var(--yellow); font-size:1.25rem; font-weight:900; white-space:nowrap; }
+    .note { color:var(--muted); font-size:.9rem; margin-top:12px; }
+    .service-area { background:var(--yellow); color:#111; border-radius:12px; padding:22px; font-weight:700; }
+    .service-area p { margin:5px 0 0; font-weight:500; }
+    .contact { text-align:center; padding:52px 0 58px; }
+    .contact p { color:var(--muted); max-width:540px; margin:0 auto 22px; }
+    footer { border-top:1px solid #333; padding:20px 0 82px; color:#999; font-size:.84rem; text-align:center; }
+    .sticky { position:fixed; bottom:0; left:0; right:0; padding:10px 16px; background:rgba(16,16,16,.96); border-top:1px solid #333; z-index:5; }
+    .sticky a { max-width:980px; margin:auto; display:flex; }
+    @media(max-width:650px) {
+      .hero { padding-top:48px; }
+      .grid { grid-template-columns:1fr; }
+      .tile { padding:18px; }
+      .price-row { align-items:flex-start; }
+      .wrap { width:min(100% - 28px, 980px); }
+      .actions .btn { width:100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">AFILAD<span>ÍSIMO</span></div>
+      <div class="tag">Afilado profesional de cuchillos</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="eyebrow">Córdoba Capital · Servicio a domicilio</div>
+        <h1>Que tus cuchillos<br>vuelvan a <em>cortar de verdad.</em></h1>
+        <p class="intro">Afilado profesional de cuchillos con retiro y entrega a domicilio sin cargo. Coordiná por WhatsApp de forma simple y rápida.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://wa.me/5493516209220?text=Hola%2C%20quiero%20consultar%20por%20el%20afilado%20de%20cuchillos." target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          <a class="btn secondary" href="#precios">Ver precios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>¿Qué afilamos?</h2><div class="yellow-line"></div>
+        <div class="grid">
+          <div class="tile"><strong>CUCHILLOS</strong><p>Para uso doméstico y de trabajo.</p></div>
+          <div class="tile"><strong>HACHAS</strong><p>Recuperá el filo para un corte más eficiente.</p></div>
+          <div class="tile"><strong>MACHETES</strong><p>Afilado para mantenerlos listos para usar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="precios">
+      <div class="wrap">
+        <h2>Precios claros</h2><div class="yellow-line"></div>
+        <div class="price-card">
+          <div class="price-row"><span>1 cuchillo</span><span class="price">$8.000</span></div>
+          <div class="price-row"><span>Más de 3 unidades<br><small>Precio por pieza</small></span><span class="price">$6.500 c/u</span></div>
+          <p class="note">Consultá por WhatsApp para coordinar el retiro y la entrega.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="service-area">
+          <h2>Retiro y entrega sin cargo</h2>
+          <p>Servicio dentro del anillo de Circunvalación de Córdoba Capital. Coordinamos el día y horario por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="wrap">
+        <div class="eyebrow">Dale otra vida a tus herramientas</div>
+        <h2>¿Coordinamos tu afilado?</h2>
+        <p>Escribime por WhatsApp, contame cuántas piezas necesitás afilar y coordinamos el retiro.</p>
+        <a class="btn primary" href="https://wa.me/5493516209220?text=Hola%2C%20quiero%20coordinar%20un%20afilado." target="_blank" rel="noopener">Hablar por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">AFILADÍSIMO · Córdoba Capital · Afilado profesional de cuchillos</div></footer>
+  <div class="sticky"><a class="btn primary" href="https://wa.me/5493516209220?text=Hola%2C%20quiero%20consultar%20por%20el%20afilado." target="_blank" rel="noopener">Consultar por WhatsApp</a></div>
+</body>
+</html>
